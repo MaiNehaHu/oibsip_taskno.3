@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Monoton&family=Montserrat+Subrayada&family=Rubik+Wet+Paint&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Copse&display=swap"
+      rel="stylesheet"
+    />
+    <!--Google fonts-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temp Conveter</title>
+    <link rel="stylesheet" href="./styel.css" />
+  </head>
+  <body>
+    <div class="body">
+      <form class="container" onsubmit="calculate(); return false">
+        <label for="temp">Enter Temperature</label>
+        <input type="number" name="temp" id="temp" />
+        <select name="temp_selection" id="temp_selection">
+          <option value="cel" index="0">&deg; Celcius</option>
+          <option value="fah" index="1">&deg; Fahrenheit</option>
+        </select>
+        <input type="submit" name="temp" id="button" />
+        <span id="result"></span>
+      </form>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
